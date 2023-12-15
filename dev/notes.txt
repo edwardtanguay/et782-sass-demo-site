@@ -1,8 +1,8 @@
 - .. Sass
 	- x Sass installieren
-	- .. mixins
-		- three button styles: primary, danger, warning
-	- conditionals: @if
-	- lighten(), darken()
-	- lists and @for / @each
+	- x mixins
+		- x three button styles: primary, danger, warning
+	- x conditionals: @if
+	- x lighten(), darken()
+	- .. lists and @for / @each
 	- 7-1 Sass folder structure

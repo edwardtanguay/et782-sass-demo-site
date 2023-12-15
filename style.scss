@@ -13,14 +13,19 @@ body {
 		color: $mainColor;
 	}
 
-	@mixin button($bgcolor: #555, $textcolor: black) {
+	@mixin button($bgcolor: #555, $textcolor: black, $borderWidth: 1px) {
 		background-color: $bgcolor;
 		color: $textcolor;
 		padding: .5rem;
 		border-radius: .5rem;
-		border: 1px solid #444;
+		border: $borderWidth solid #444;
+
 		&:hover {
 			background-color: lighten($bgcolor, 10%)
+		}
+
+		@if $borderWidth >1px {
+			box-shadow: 5px 5px 5px #444;
 		}
 	}
 
@@ -29,14 +34,24 @@ body {
 	}
 
 	.btn-secondary {
-		@include button(darkgreen, #ccc);
+		@include button(darkgreen, #ccc, 2px);
 	}
 
 	.btn-danger {
-		@include button(tomato);
+		@include button(tomato, black, 4px);
 	}
 
 	.btn-warning {
 		@include button(orange);
+	}
+
+	$colors: yellow, orange, green, blue, red;
+
+	@for $i from 1 through length($colors) {
+		.box-#{$i} {
+			width: 3rem;
+			height: 3rem;
+			background-color: nth($colors, $i);
+		}
 	}
 }
