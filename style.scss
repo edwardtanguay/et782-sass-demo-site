@@ -28,6 +28,10 @@ body {
 		@include button(navy, #ccc);
 	}
 
+	.btn-secondary {
+		@include button(darkgreen, #ccc);
+	}
+
 	.btn-danger {
 		@include button(tomato);
 	}

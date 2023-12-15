@@ -6,6 +6,7 @@ document.querySelector("#app").innerHTML = /*html*/ `
 	<p>Welcome to this site.</p>
 
 	<button class="btn-primary">Get Info</button>
+	<button class="btn-secondary">Newsletter</button>
 	<button class="btn-danger">Delete</button>
 	<button class="btn-warning">Backup</button>
 
