@@ -18,5 +18,13 @@ document.querySelector("#app").innerHTML = /*html*/ `
 	<p class="box-4"></p>
 	<p class="box-5"></p>
 
+	<hr>
+
+	<p class="ball-blue"></p>
+	<p class="ball-red"></p>
+	<p class="ball-yellow"></p>
+	<p class="ball-green"></p>
+
+
 </section>
 `;

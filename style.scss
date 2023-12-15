@@ -54,4 +54,14 @@ body {
 			background-color: nth($colors, $i);
 		}
 	}
+
+	@each $color in $colors {
+		.ball-#{$color} {
+			width: 4rem;
+			height: 4rem;
+			background-color: $color;
+			border-radius: 50%;
+		}
+	}
+
 }

@@ -4,5 +4,5 @@
 		- x three button styles: primary, danger, warning
 	- x conditionals: @if
 	- x lighten(), darken()
-	- .. lists and @for / @each
-	- 7-1 Sass folder structure
+	- x lists and @for / @each
+	- .. 7-1 Sass folder structure
