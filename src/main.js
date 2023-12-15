@@ -1,4 +1,4 @@
-import "./style.scss";
+import "./sass/main.scss";
 
 document.querySelector("#app").innerHTML = /*html*/ `
 <section class="main">
