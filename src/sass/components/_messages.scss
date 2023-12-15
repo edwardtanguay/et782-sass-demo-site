@@ -1,0 +1,15 @@
+.btn-primary {
+	@include button(navy, #ccc);
+}
+
+.btn-secondary {
+	@include button(darkgreen, #ccc, 2px);
+}
+
+.btn-danger {
+	@include button(tomato, black, 4px);
+}
+
+.btn-warning {
+	@include button(orange);
+}

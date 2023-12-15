@@ -1,0 +1,15 @@
+@mixin button($bgcolor: #555, $textcolor: black, $borderWidth: 1px) {
+	background-color: $bgcolor;
+	color: $textcolor;
+	padding: .5rem;
+	border-radius: .5rem;
+	border: $borderWidth solid #444;
+
+	&:hover {
+		background-color: lighten($bgcolor, 10%)
+	}
+
+	@if $borderWidth >1px {
+		box-shadow: 5px 5px 5px #444;
+	}
+}
